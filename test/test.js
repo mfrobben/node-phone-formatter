@@ -16,7 +16,8 @@ describe('Normalize', function() {
     "+1 (212) 555-1212",
     "12125551212",
     "+45 (212) 555-1212",
-    "2125551212"
+    "2125551212",
+    "+1 (212) 555-1212x9000",
   ]
   
   testFormats.forEach(function(number) {
@@ -111,8 +112,7 @@ describe('Format', function() {
         PhoneFormatter.format(phoneNumber, "1NNNNNNNNNN"),
         "12125551212"
       );
-    });
-    
+    });    
   });
   
   describe('options', function () {
